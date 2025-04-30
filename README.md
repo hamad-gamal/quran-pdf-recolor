@@ -37,20 +37,6 @@ This script transforms the black (or near-black) text of chosen pages in a Qurʾ
 
 ---
 
-## Command-Line Cheat-Sheet ⚡
-
-```bash
-python recolor.py \
-  --input "D:/QURAN/quran_hafs_m.pdf" \
-  --output "D:/QURAN/quran_hafs_colored.pdf" \
-  --poppler-path "D:/poppler/bin" \
-  --color 4 \            # 💛 Yellow
-  --threshold 40 \       # How dark is “black”?
-  --dpi 300 \            # Image sharpness
-  --start-page 1 \
-  --end-page 20
-
-
 
 ---
 
@@ -88,4 +74,22 @@ python recolor.py \
   --dpi 300 \            # وضوح الصورة
   --start-page 1 \
   --end-page 20
+
+
+
+## Command-Line Cheat-Sheet ⚡
+
+```bash
+python recolor.py \
+  --input "D:/QURAN/quran_hafs_m.pdf" \
+  --output "D:/QURAN/quran_hafs_colored.pdf" \
+  --poppler-path "D:/poppler/bin" \
+  --color 4 \            # 💛 Yellow
+  --threshold 40 \       # How dark is “black”?
+  --dpi 300 \            # Image sharpness
+  --start-page 1 \
+  --end-page 20
+
+
+
 
