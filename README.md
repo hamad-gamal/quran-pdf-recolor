@@ -22,7 +22,7 @@ This script transforms the black (or near-black) text of chosen pages in a Qurʾ
 | 1️⃣ **Load & Check** | 🗂️ Reads your input PDF path and verifies the file exists. | `argparse`, `os.path.isfile` | 📂✅ |
 | 2️⃣ **Page-to-Image** | 📑➜🖼️ Converts the chosen page range to high-resolution images using Poppler via **pdf2image**. | `convert_from_path` | 🖨️🖼️ |
 | 3️⃣ **Detect Black Pixels** | 🎯 Creates a NumPy mask of every “almost-black” pixel (R,G,B < your `threshold`). | `numpy` 🧮 | 🕵️‍♀️⚫ |
-| 4️⃣ **Re-Color** | 🎨 Swaps those black pixels for the color you picked (`--color 1..18`). | `replace_black_pixels_with_color()` | 🌈✏️ |
+| 4️⃣ **Re-Color** | 🎨 Swaps those black pixels for the color you picked (`--color 1..18`). | `replace_black_pixels_with_color()` | ✏️ |
 | 5️⃣ **Progress Bar** | ⏳ Shows a live update so you know something’s happening! | `tqdm` | 📊🚀 |
 | 6️⃣ **Save New PDF** | 💾 Merges the recolored images back into one sleek PDF. | `PIL.Image.save(..., save_all=True)` | 🗃️📥 |
 
